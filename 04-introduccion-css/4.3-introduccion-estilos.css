@@ -1,0 +1,24 @@
+.colores-predeterminados {
+  color: orangered;
+}
+
+.colores-hexadecimales {
+  color: #6D597A;
+}
+
+.colores-rgb {
+  color: rgb(211, 110, 245);
+}
+
+.colores-rgba {
+  color: rgba(25, 76, 48, 0.5);
+}
+
+.fondo-color {
+  background-color: rgba(25, 76, 48, 0.5);
+}
+
+.fondo-imagen {
+  background-image: url("https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg?w=2000");
+  background-position:  left bottom;
+}

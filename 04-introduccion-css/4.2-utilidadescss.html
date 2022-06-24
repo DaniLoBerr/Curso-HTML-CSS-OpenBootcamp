@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilidades CSS: Formas de dar estilo a elementos HTML</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <!--Link obtenido de la página web purecss.io-->
+  </head>
+  <body>
+
+    <h1>Utilidades CSS: Formas de darle estilo a elementos HTML</h1>
+
+    <p>Aunque lo más recomendable es dar estilo a los elementos a través de una hoja de estilo, existen 4 maneras: </p>
+    <ul>
+      <li>A través de una hoja de estilo local</li>
+      <!--Como hemos hecho en el documento anterior-->
+      <li id="lista-2">A través de la etiqueta &#60;style&#62;</li>
+      <style>
+        #lista-2 {
+          color: blue;
+        }
+      </style>
+      <li style="color: green; text-decoration: underline;">A través del atributo "style"</li>
+      <li class="pure-u">A través de una hoja de estilo externa</li> <!--Clase obtenida de la hoja de estilo externa-->
+    </ul>
+  </body>
+</html>

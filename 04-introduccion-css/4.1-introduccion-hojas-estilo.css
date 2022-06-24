@@ -1,0 +1,56 @@
+/*Selector de etiquetas*/
+h1 {
+  color:red;
+}
+
+p {
+  color: green;
+  font-size: 12pt;
+  color: blue;
+  /* En caso de discrepancia, el atributo posterior sobreescribe al anterior. Si inspeccionamos la página, vemos que el atributo sobreescrito nos aparece tachado.*/
+}
+
+/*Atajo ctrl+espacio: muestra opciones disponibles*/
+
+
+/*selector de clases*/
+.encabezado {
+  color: seagreen;
+  font-size: 50pt;
+  text-transform: uppercase;
+}
+
+.noticias-generales {
+  color: wheat;
+  font-size: 30pt;
+}
+
+/*selector de id*/
+#primera-noticia {
+  color: firebrick;
+  font-size: 15pt;
+}
+
+p#segunda-noticia {
+  color: lightcoral;
+  font-size: 19pt;
+  /*El p# sirve para especificar que este estilo se muestre solo en los párrafos que contengan este id*/
+}
+
+/*Selector universal*/
+* {
+  color: black;
+  font-size: 15pt;
+  /*Muestra este estilo en todos los elementos en los que no se les ha aplicado otro estilo*/
+}
+
+*.warning {
+  color: red;
+  text-decoration: underline;
+  /*Muestra este estilo en todos los elementos que contengan esta clase, aunque tengan otro id o otra clase con otras propiedades. El asterísco hace que actue sobre los demás.*/
+}
+
+.noticias-generales, #segunda-noticia, h3 {
+  text-align: center;
+  /*Se pueden seleccionar varios elementos a la vez para darles el mismo estilo*/
+}

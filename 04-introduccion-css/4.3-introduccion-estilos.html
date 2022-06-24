@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a los estilos en CSS</title>
+    <link rel="stylesheet" href="4.3-introduccion-estilos.css" type="text/css">
+    <!--Atajo link:css. Para linkear una hoja de estilo-->
+  </head>
+  <body>
+    <h1>Introducción a los estilos en CSS</h1>
+    <!--Atajo etiqueta.clase: Para escribir una etiqueta con un atributo class dentro con el nombre de la clase que queramos seleccionar-->
+
+    <h2>Introducción a los colores</h2>
+
+    <h3>Colores predeterminados</h3>
+    <p class="colores-predeterminados">
+      Se puede modificar el color del texto con los colores predeterminados que nos ofrece CSS.
+    </p>
+
+    <h3>Colores hexadecimales</h3>
+    <p class="colores-hexadecimales">
+      Se puede dar un color al texto a través de su valor haxadecimal. Existen páginas como <a href="https://coolors.co" target="_blank">coolors.co</a> que te muestran los valores hexadecimales de diferentes paletas de colores aleatorias.
+    </p>
+
+    <h3>Colores RGB</h3>
+    <p class="colores-rgb">
+      Se puede modificar el color del texto con los valores RGB (Red, Green, Blue). Se da un valor de 0 a 255 de cada uno de los colores y el color resultante es la mezcla de los tres.
+    </p>
+
+    <h3>Colores RGBA</h3>
+    <p class="colores-rgba">
+      Igual que los colores RGB pero le añade un cuarto valor que afecta a la opacidad. Se da un valor entre 0 (transparente) y 1 (totalmente opaco).
+    </p>
+
+    <h2>Introducción a los fondos</h2>
+    <div class="fondo-color">
+      <p>
+        Se puede colorear el fondo de etiquetas contenedoras (como por ejemplo la de este div) con el atributo "backgroud-color" en CSS. Hay muchos tipos de atributos "background", con el "background-color" modificamos solo el color. Se pueden utilizar colores de cualquiera de las maneras anteriores. Por ejemplo, voy a utilizar un RGBA aquí.
+      </p>
+    </div>
+    <div class="fondo-imagen">
+      <p>
+        También se puede agregar una imagen de fondo con el atributo "background-image" y el valor url(""). Se puede introducir una url local o externa.
+      </p>
+      <p>
+        Se puede utiliza el atributo "background-position-x" para elegir en qué punto del eje horizontal queremos poner el texto. Con el atributo "background-position-y", modificaríamos el eje vertical. Y con el atributo "background-position", modificaríamos los dos a la vez, dando dos valores del tipo top, center, bottom, left, right (el primer valor correspondería al eje x y el segundo al eje y).
+      </p>
+    </div>
+
+    <h2>Introducción a los espacios y tamaños</h2>
+    
+  </body>
+</html>
