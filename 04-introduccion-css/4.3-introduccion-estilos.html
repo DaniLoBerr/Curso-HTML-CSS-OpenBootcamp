@@ -12,7 +12,7 @@
     <h1>Introducción a los estilos en CSS</h1>
     <!--Atajo etiqueta.clase: Para escribir una etiqueta con un atributo class dentro con el nombre de la clase que queramos seleccionar-->
 
-    <h2>Introducción a los colores</h2>
+    <h2>Colores</h2>
 
     <h3>Colores predeterminados</h3>
     <p class="colores-predeterminados">
@@ -34,7 +34,7 @@
       Igual que los colores RGB pero le añade un cuarto valor que afecta a la opacidad. Se da un valor entre 0 (transparente) y 1 (totalmente opaco).
     </p>
 
-    <h2>Introducción a los fondos</h2>
+    <h2>Fondos</h2>
     <div class="fondo-color">
       <p>
         Se puede colorear el fondo de etiquetas contenedoras (como por ejemplo la de este div) con el atributo "backgroud-color" en CSS. Hay muchos tipos de atributos "background", con el "background-color" modificamos solo el color. Se pueden utilizar colores de cualquiera de las maneras anteriores. Por ejemplo, voy a utilizar un RGBA aquí.
@@ -49,7 +49,85 @@
       </p>
     </div>
 
-    <h2>Introducción a los espacios y tamaños</h2>
+    <h2>Espacios y Tamaños</h2>
     
+    <h3>Tamaño: alto y ancho</h3>
+    <div class="tamaño">
+      <p>
+        El ancho de un contenedor se puede modificar con el atributo "width".         La altura de un contenedor se puede modificar con el atributo "height". Se pueden utilizar por separado y se pueden combinar. Si se expresan por separado, el que no está indicado toma su valor de forma dinámica, en función del contenido. Sus valores se pueden expresar de diferentes maneras, lo habitual es en píxeles.
+        Trabajar con píxeles no es muy responsive por lo que más adelante se verán opciones más recomendables.
+      </p>
+    </div>
+
+    <h3>Espacios: border, padding y margin</h3>
+    <div class="espacios">
+      <ul>
+        <li>
+          El border es es el borde del contenedor. Se le puede aplicar diferentes atributos como el "border-style" (el tipo de borde), el "border-color" (el color del borde), el border-width (el ancho del borde), etc.
+        </li>
+        <li>
+          El padding es el espacio interno que hay entre el contenido y el borde del contenedor. Se puede modificar el padding de cada lado por separado
+        </li>
+        <li>
+          El margin es el espacio externo entre el contenedor y los elementos de su alrededor.
+        </li>
+        <p>
+          De cada elemento de los espacios se les puede aplicar valores por separado para cada lado del contenedor (top, bottom, left, right). Incluso al atributo genérico de cada uno se le puede dar uno, dos, tres o cuatro valores y cada uno de ellos afectará a cada lado del contenedor: si hay dos valores, afectarán al eje x el primero, los lados arriba y abajo, y al eje y el segundo, los lados derecho e izquierdo. Si hay más valores, afectarán a los lados en el sentido de las agujas del reloj.
+        </p>
+      </ul>
+    </div>
+
+    <h2>Textos</h2>
+
+    <h3>Tipo de fuente</h3>
+    <p>
+      El tipo de fuente se determina con el atributo "font-family". Css nos ofrece de manera predeterminada diferentes tipos de fuentes. Se puede cambiar el grosor de la fuente con el atributo "font-weight". 400 es el valor estándar. Se puede cambiar el tamaño de la letra con el "font-size". En el font-size se pueden definir valores de diferentes maneras (píxeles, puntos, tamaños predeterminados como larger, smaller, etc).
+    </p>
+    <p>
+      Si queremos que los cambios en la fuente afecten a todo el documento, se debe seleccionar la etiqueta html en el documento css.
+    </p>
+    <p>
+      Se pueden importar diferentes tipos de fuentes externos, como por ejemplo de <a href="https://fonts.google.com/" target="_blank">Google fonts</a>. En esta página, puedes seleccionar el tipo de fuente que quieres y después seleccionar diferentes características del mismo (diferentes grosores de la fuente, la cursiva, la negrita, etc). No se recomienda importar todas las características porque puede ralentizar la página, lo mejor es seleccionar unas pocas características que más o menos creamos que vamos a utilizar e importar solo esas. 
+    </p>
+    <p>
+      Se puede importar la fuente de varias maneras:
+    </p>
+    <ul>
+      <li>
+        Copiando en la etiqueta head del documento html una o varias etiquetas link con la dirección donde se encuentre la fuente que queremos utilizar. Habría que copiar también en el atributo font-family del documento CSS el nombre del tipo de fuente.
+        <!--
+          <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+          </head>
+
+          CSS -> font-family: 'Noto Serif', serif;
+        -->
+      </li>
+      <li>
+        Importando una dirección tipo @import dentro de una etiqueta style dentro de la etiqueta head.
+        <!--
+          <head>
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+            </style> 
+          </head>
+
+          CSS -> font-family: 'Noto Serif', serif;
+        -->
+      </li>
+      <li>
+        Importando directamente en el documento CSS un enlace @import con la dirección de la fuente. Esta es la opción más recomendable para no ensuciar el documento html con cosas relacionadas con el estilo.
+
+        <!--
+          @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+          html {
+            font-family: 'Noto Serif', serif;
+          }
+        -->
+      </li>
+    </ul>
   </body>
 </html>

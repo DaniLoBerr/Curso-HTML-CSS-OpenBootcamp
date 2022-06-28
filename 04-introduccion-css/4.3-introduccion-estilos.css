@@ -22,3 +22,30 @@
   background-image: url("https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg?w=2000");
   background-position:  left bottom;
 }
+
+.tamaño {
+  background-color: aquamarine;
+  width: 300px;
+  height: 600px;
+}
+
+.espacios {
+  border-style: solid;
+  border-color: rgb(150, 150, 150);
+  border-width: 1px;
+  /*border-top: none;*/
+  padding: 20px;
+  /*padding: 10px 20px 30px 40px*/
+  margin: 20px;
+  /*margin: 10px 20px 30px 40px*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+  font-family: font-family: 'Noto Serif', serif;
+  font-weight: 400; /*400 grosor regular*/
+  font-size: larger;
+}
+
+/*Estos dos últimos elementos los pongo aquí por seguir el orden de los apuntes pero realmente las importaciones se colocan todas al principio del documento (creo) y además los elementos en un documento CSS se ordenan por identación, es decir, el elemento html debería ir al princio seguido del elemento body, los encabezados, etc*/
