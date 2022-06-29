@@ -1,0 +1,19 @@
+.div-1, .div-2 {
+  background-color: blueviolet;
+}
+
+.span-1 {
+background-color: yellow;
+display: inline-block;
+width: 300px;
+}
+
+.span-2 {
+background-color: orange;
+float: inline-end;
+}
+
+#logo-html {
+  height: 100px;
+  width: 100px;
+}
