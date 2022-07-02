@@ -7,16 +7,17 @@ div {
 #static {
   position: static; /*Posicionamento por defecto, no hace falta escribirlo*/
   background-color: aqua;
+  left: 80px; /*Pongo este valor para que se vea que no funciona para posicionamiento estático*/
 }
 
 #relative {
   position: relative;
   background-color: mediumpurple;
   left: 50px;
-  margin: 10px; 
+  margin-left: 200px; 
 }
 
-.absolute {
+.relative-container {
   position: relative;
   background-color: blue;
   right: 40px;
@@ -36,7 +37,7 @@ div {
   background-color: burlywood;
   top: 100px;
   right: 0px;
-  height: 50px;
+  height: 100px;
   z-index: 10;
 }
 

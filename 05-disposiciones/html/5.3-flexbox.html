@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/5.3-flexbox.css" type="text/css">
+  <title>FlexBox</title>
+</head>
+<body>
+
+  <!--
+    
+    En el siguiente enlace hay un montón de ejemplos visuales de las propiedades flexbox que veremos a continuación:
+    
+    https://codepen.io/enxaneta/full/adLPwv
+  -->
+
+  <h1>Flexbox</h1>
+  <p>
+    El display flex es una propiedad de posicionamiento para contenedores que nos ordena de diferentes maneras los elementos que se encuentran dentro de los mismos en función de los ejes principal (el eje x) y secundario (el eje y). La organización en el eje principal se realiza con la propiedad "Justify-content" y en el eje secundario con la propiedad "align-items".
+  </p>
+  <p>
+    Se podría cambiar esto y hacer que el eje principal sea el vertical y que el eje secundario sea el horizontal con la propiedad "flex-direction".
+  </p>
+  <p>
+    Lo más importante de la disposición flex es su responsividad, es decir, cuando la página se hace más grande o más pequeña los elementos se van resimensionando. Esto se puede modificar con la propiedad "flex-wrap".
+  </p>
+
+  <h2>Justify-content</h2>
+  <p>
+    Propiedad para organizar los elementos en función del eje principal. Diferentes valores:
+  </p>
+
+  <h3>Por defecto (sin display flex ni justify-content)</h3>
+  <p>
+    Los elementos se organizan con su estado natural, si son divs como en este caso, actuan como bloques y ocupan todo el ancho de la pantalla.
+  </p>
+  <div class="contenedor-por-defecto">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h3>Start</h3>
+  <p>
+    Es el justify-content por defecto cuando utilizamos la disposición flex. Los elementos se organizan todos juntos en la parte superior izquierda del contenedor y el espacio sobrante se acumula a la derecha de los mismos.
+  </p>
+  <div class="contenedor-start">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h3>Center</h3>
+  <p>
+    Los elementos se organizan en la parte superior central del contenedor todos juntos y el espacio sobrante se acumula a los lados de estos.
+  </p>
+  <div class="contenedor-center">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h3>End</h3>
+  <p>
+    Los elementos se organizan todos juntos en la parte superior derecha del contenedor y el espacio sobrante se acumula en la izquierda.
+  </p>
+  <div class="contenedor-end">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h3>Space-between</h3>
+  <p>
+    Los elementos se separan proporcionalmente en la parte superior del contenedor, el primero pegado a la parte izquierda, el último pegado a la parte derecha y el espacio sobrante se acumula entre los mismos.
+  </p>
+  <div class="contenedor-between">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h3>Space-around</h3>
+  <p>
+    Los elementos se separan proporcionalmente en la parte superior del contenedor pero esta vez acumulando el espacio sobrante a ambos lados de todos los elementos.
+  </p>
+  <div class="contenedor-around">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h2>Align-items</h2>
+  <p>
+    Propiedad para organizar los elementos en función del eje secundario. Diferentes valores: 
+  </p>
+
+  <h3>Stretch</h3>
+  <p>
+    Este es el valor por defecto. Si los elementos no tienen definida una altura específica, lo que hace este valor es que los elementos ocupen toda la altura del contenedor.
+  </p>
+  <div class="contenedor-stretch">
+    <div class="elemento-1-align"></div>
+    <div class="elemento-2-align"></div>
+    <div class="elemento-3-align"></div>
+  </div>
+
+  <h3>Center</h3>
+  <p>
+    Este valor coloca a los elementos en el centro del eje secundario. Además, adaptan el tamaño de su altura en función de lo que contengan.
+  </p>
+  <div class="contenedor-center-align">
+    <div class="elemento-1-align">Texto y más texto.</div>
+    <div class="elemento-2-align">Texto</div>
+    <div class="elemento-3-align">Texto</div>
+  </div>
+
+  <h3>Flex-start</h3>
+  <p>
+    Este valor coloca a los elementos en la parte superior del eje secundario. Además, adaptan el tamaño de su altura en función de lo que contengan.
+  </p>
+  <div class="contenedor-flex-start">
+    <div class="elemento-1-align">Texto y más texto.</div>
+    <div class="elemento-2-align">Texto</div>
+    <div class="elemento-3-align">Texto</div>
+  </div>
+
+  <h3>Flex-end</h3>
+  <p>
+    Este valor coloca a los elementos en la parte inferior del eje secundario. Además, adaptan el tamaño de su altura en función de lo que contengan.
+  </p>
+  <div class="contenedor-flex-end">
+    <div class="elemento-1-align">Texto y más texto.</div>
+    <div class="elemento-2-align">Texto</div>
+    <div class="elemento-3-align">Texto</div>
+  </div>
+
+  <h2>Flex-direction</h2>
+
+  <h3>Row</h3>
+  <p>
+    Este es el valor por defecto. Mantiene como eje principal al horizontal y como eje secundario al vertical
+  </p>
+  <div class="contenedor-row">
+    <div class="elemento-1-align">Texto y más texto.</div>
+    <div class="elemento-2-align">Texto</div>
+    <div class="elemento-3-align">Texto</div>
+  </div>
+
+  <h3>Row-reverse</h3>
+  <p>
+    Invierte el orden de los elementos: el último pasa a ser el primero viceversa, lo renderiza todo de derecha a izquierda.
+  </p>
+  <div class="contenedor-row-reverse">
+    <div class="elemento-1-align">Texto y más texto.</div>
+    <div class="elemento-2-align">Texto</div>
+    <div class="elemento-3-align">Texto</div>
+  </div>
+
+  <h3>Column</h3>
+  <p>
+    Invierte el orden de los ejes. El eje principal pasa a ser el vertical y el eje secundario pasa a ser el horizontal.
+  </p>
+  <div class="contenedor-column">
+    <div class="elemento-1-align">Texto y más texto.</div>
+    <div class="elemento-2-align">Texto</div>
+    <div class="elemento-3-align">Texto</div>
+  </div>
+
+  <h3>Column-reverse</h3>
+  <p>
+    Invierte el orden de los ejes y de los elementos. El eje principal pasa a ser el vertical y el eje secundario pasa a ser el horizontal, y el primer elemento pasa a ser el último y viceversa.
+  </p>
+  <div class="contenedor-column-reverse">
+    <div class="elemento-1-align">Texto y más texto.</div>
+    <div class="elemento-2-align">Texto</div>
+    <div class="elemento-3-align">Texto</div>
+  </div>
+
+  <h2>Flex-wrap</h2>
+  <p>
+    Con la propiedad flex-wrap, podemos hacer que los elementos dentro del contenedor no se redimensionen, es decir, que mantengan su tamaño original y que actuen de diferentes maneras cuando la página se redimensiona. Lo que hacen es envolverse entre sí. Estos son algunos de sus valores:
+  </p>
+
+  <h3>nowrap</h3>
+  <p>
+    El valor nowrap es el valor por defecto, es decir, que los elementos dentro del contenedor se redimensionan en función del tamaño de la página.
+  </p>
+  <div class="contenedor-nowrap">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h3>wrap</h3>
+  <p>
+    Con el valor wrap, lo que hacemos es que los elementos mantienen su tamño original y, en el momento en que la pantalla se hace tan pequeña que no caben los elementos la misma línea, se van envolviendo y colocándose uno debajo de otro del último al primero.
+  </p>
+  <div class="contenedor-wrap">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h3>wrap-reverse</h3>
+  <p>
+    El valor wrap-reverse coloca los elementos en la parte inferior del contenedor y, cuando se redimensiona la página, va subiendo los elementos del último al primero.
+  </p>
+  <div class="contenedor-wrap-reverse">
+    <div class="elemento-1"></div>
+    <div class="elemento-2"></div>
+    <div class="elemento-3"></div>
+  </div>
+
+  <h2></h2>
+</body>
+</html>
