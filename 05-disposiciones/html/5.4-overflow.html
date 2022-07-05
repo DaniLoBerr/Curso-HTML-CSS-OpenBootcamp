@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/5.4-overflow.css">
+    <title>Overflow</title>
+  </head>
+
+  <body>
+
+    <h1>Overflow</h1>
+    <p>
+      El overflow es lo que ocurre cuando tenemos un contenedor con un tamaño fijo (no aplica a los flexbox) y el contenido se desborda. La propiedad overflow nos permite manejar el comportamiento de ese contenido cuando se desborda.
+    </p>
+
+    <h2>Visible</h2>
+    <p>
+      Este es el valor por defecto de overflow, el contenido se desborda y se queda tal cual.
+    </p>
+    <div id="overflow-visible">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque laudantium beatae explicabo rerum ipsa mollitia qui quisquam officiis earum atque et, at temporibus tempora ipsam nulla voluptas blanditiis odit.
+      </p>
+    </div>
+
+    <h2>Hidden</h2>
+    <p>
+      El contenido desbordado queda oculto, es decir, en el momento en que el contenido llega al limite del contenedor, este continua por debajo pero deja de verse.
+    </p>
+    <div id="overflow-hidden">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque laudantium beatae explicabo rerum ipsa mollitia qui quisquam officiis earum atque et, at temporibus tempora ipsam nulla voluptas blanditiis odit.
+      </p>
+    </div>
+
+    <h2>Scroll</h2>
+    <p>
+      Se crean las barras de scroll tanto en el eje y como en el x aunque no sean necesarias.
+    </p>
+    <div id="overflow-scroll">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque laudantium beatae explicabo rerum ipsa mollitia qui quisquam officiis earum atque et, at temporibus tempora ipsam nulla voluptas blanditiis odit.
+      </p>
+    </div>
+
+    <h2>Auto</h2>
+    <p>
+      Se crean las barras de scroll según se necesiten.
+    </p>
+    <div id="overflow-auto">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque laudantium beatae explicabo rerum ipsa mollitia qui quisquam officiis earum atque et, at temporibus tempora ipsam nulla voluptas blanditiis odit.
+      </p>
+    </div>
+
+    <h3>Overflow-x / Overflow-y</h3>
+    <p>
+      Realmente se pueden modificar por separado el excedente que se produce en el eje x y en el eje y con estas propiedades.
+    </p>
+    <div id="overflow-x-e-y">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque laudantium beatae explicabo rerum ipsa mollitia qui quisquam officiis earum atque et, at temporibus tempora ipsam nulla voluptas blanditiis odit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nulla incidunt accusamus neque porro nisi, ea omnis excepturi reiciendis inventore rem in aut ipsum odit quis quisquam quidem tenetur doloribus.
+      </p>
+    </div>
+
+  </body>
+
+</html>

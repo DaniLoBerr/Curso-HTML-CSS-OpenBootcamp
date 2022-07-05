@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* De esta manera le quitamos el padding y el margin que tiene cargados por defecto la página web debido al user agent stylesheet */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#imagen-principal {
+  width: 100vw;
+  opacity: 0.7;
+  /* 100vw quiere decir "100% del viewport", o sea que la imagen principal ocupe el 100% del ancho del tamaño de la pantalla/ventana */
+
+  /* Opacity juega con la opacidad de la imagen. Se le puede dar unos valores entre 1 y 0, el 1 es totalmente opaca, el 0 es totalmente transparente */
+}
+
+#imagen-principal:hover {
+  opacity: 1;
+
+  /* Se le pueden aplicar este tipo de funcionalidades a los selectores.
+  
+  En este caso, el hover quiere decir que el elemento actue de cierta manera cuando se pasa el puntero por el elemento. En este caso, la imagen se vuelve totalmente opaca.
+  */
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  /* En este selector, además de lo ya explicado en temas anteriores, le damos un gap, que quiere decir un espacio entre los elementos. */
+}
+
+.imagen-galeria {
+  width: 150px;
+}
+
+.imagen-galeria:hover {
+  opacity: 0.3;
+  cursor: pointer;
+
+  /* Aquí, al igual que antes, le damos un hover a los elementos haciendo que además el puntero cambie de forma. */
+}

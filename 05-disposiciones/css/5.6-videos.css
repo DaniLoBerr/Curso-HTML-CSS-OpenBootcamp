@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#video-fondo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  /*
+  100vw y 100 vh significa viewport width y viewport height, lo cual hace que, sea cual sea el tamaño de la ventana/pantalla, el objeto ocupe la totalidad de la misma.
+  Pero en este caso, el video tiene unas dimensiones específicas que hacen que no pueda ocupar la altura completa sin deformarse. Con el object-fit: cover, hacemos que el elemento rellene toda la pantalla aunque se deforme.
+  */
+}
+
+#texto-video {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+
+  /* Con el height 100vh, hacemos que este div ocupe toda la altura de la pantalla. El propio div ya tiene el comportamiento por defecto de ocupar toda la anchura */
+}
