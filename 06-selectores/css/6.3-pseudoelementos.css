@@ -1,0 +1,46 @@
+.before {
+  background-color: skyblue;
+  padding: 10px;
+}
+
+.before span {
+  font-style: italic;
+}
+
+.before span.frase::before {
+  content: '<< ';
+  font-size: x-small;
+}
+
+.before span.frase::after {
+  content: ' >>';
+  font-size: x-small;
+}
+
+.first-letter {
+  background-color: burlywood;
+  padding: 20px;
+}
+
+.first-letter p::first-letter {
+  font-size: xx-large;
+}
+
+.first-line {
+  background-color: blueviolet;
+  padding: 20px;
+}
+
+.first-line p::first-line {
+  color: aliceblue;
+}
+
+*::selection {
+  background-color: blue;
+  color: black;
+}
+
+.marker li::marker {
+  color:indigo;
+  font-size: xx-large;
+}

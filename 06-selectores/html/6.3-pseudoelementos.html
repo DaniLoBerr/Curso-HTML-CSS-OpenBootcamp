@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <link rel="stylesheet" href="../css/6.3-pseudoelementos.css">
+  </head>
+
+  <body>
+    <h1>Pseudoelementos</h1>
+    <p>
+      Son una especie de atributos en CSS que sirven para modificar ciertas partes de la página (del DOM?) que no se pueden seleccionar específicamente con un selector, es decir, no se pueden llamar como a una etiqueta, a una clase, etc. Son por ejemplo la primera letra de un párrafo, la selección que hacemos por ejemplo de un tramo de un texto, etc. Vamos a ver algunos pseudoelementos de los más utilizados, aunque existen un montón más.
+      <!-- Ver listado completo de psudoelementos en w3schools -->
+    </p>
+
+    <h2>Before y After</h2>
+    <p>
+      Modifican la parte de antes y la parte de después de un contenido seleccionado.
+    </p>
+    <div class="before">
+      <p>
+        <span class="frase">S'a matao Paco!</span> - Un señor de un pueblo.
+      </p>
+    </div>
+
+    <h2>First letter</h2>
+    <p>
+      <div class="first-letter">
+        <p>
+          Modifica la primera letra de los elementos seleccionados.
+        </p>
+      </div>
+    </p>
+
+    <h2>First line</h2>
+    <div class="first-line">
+      <p>
+        Modifica la primera línea de los elementos seleccionados. Pongo un lorem ipsum para que se note.
+
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur nam, itaque voluptatum reiciendis, repudiandae quibusdam maxime perspiciatis non sit praesentium nesciunt vel culpa! Ipsum laudantium aspernatur voluptas, consequuntur voluptatibus ducimus?
+      </p>
+    </div>
+
+    <h2>Selection</h2>
+    <p>
+      Modifica lo que seleccionamos del texto de una página.
+    </p>
+
+    <h2>Marker</h2>
+    <div class="marker">
+      <p>
+        Modifica los marcadores de, por ejemplo, las listas.
+      </p>
+      <ul>
+        <li>Elemento</li>
+        <li>Elemento</li>
+      </ul>
+      <ol>
+        <li>Elemento</li>
+        <li>Elemento</li>
+      </ol>
+
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <link rel="stylesheet" href="../css/6.2-pseudoclases.css">
+    <style>
+      .hover {
+        padding: 10px;
+        background-color: greenyellow;
+      }
+
+      .hover:hover {
+        background-color: green;
+      }
+
+      .first-child {
+        padding: 10px;
+        background-color: chartreuse;
+      }
+
+      .first-child p:first-child{
+        color: blue;
+      }
+
+      a:link {
+        color: red;
+        background-color: beige;
+      }
+
+      a:visited {
+        color: brown;
+        background-color: aqua;
+      }
+
+      a:hover {
+        background-color: black;
+      }
+
+      a:active {
+        background-color: greenyellow;
+      }
+
+      .warning {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Pseudoclases</h1>
+    <p>
+      Son una especie de atributos en CSS que se añaden a las clases para hacer que sus elementos actuen de ciertas maneras. Vamos a ver a continuación las más utilizadas pero hay un montón más.
+    </p>
+
+    <h2>Hover</h2>
+    <div class="hover">
+      <p>
+        Hace que cuando pasas el puntero encima de un elemento con esta pseudoclase, este elemento cambia según lo que le indiques en la pseudoclase, como que se activa la pseudoclase cuando pasas por encima el puntero.
+      </p>
+    </div>
+
+    <h2>First child</h2>
+    <div class="first-child">
+      <p>
+        Hace que lo que indiques en la pseudoclase, afecte solo al primer elemento del selector seleccionado. Si lo que se quiere por ejemplo es afectar al primer párrafo de una clase, se debe anidar el selector p en el selector de la clase, como en este ejemplo.
+      </p>
+      <p>
+        Segundo elemento. No está afectado por la pseudoclase.
+      </p>
+    </div>
+
+    <h2>Enlaces</h2>
+
+    <h3>a:link</h3>
+    <div>
+      <p>
+        Para cambiar el comportamiento de los enlaces no visitados.
+      </p>
+      <a href="https://www.facebook.com/" target="_blank">Enlace 1</a>
+    </div>
+
+    <h3>a:visited</h3>
+    <div>
+      <p>
+        Para cambiar el comportamiento de los enlaces visitados.
+      </p>
+      <a href="https://www.google.com/" target="_blank">Enlace 1</a>
+    </div>
+
+    <h3>a:hover</h3>
+    <div>
+      <p>
+        Para cambiar el comportamiento de los enlaces cuando pasamos el puntero por encima de ellos.
+      </p>
+      <a href="https://www.google.com/" target="_blank">Enlace 1</a>
+    </div>
+
+    <h3>a:active</h3>
+    <div>
+      <p>
+        Para cambiar el comportamiento de los enlaces cuando clicamos en ellos.
+      </p>
+      <a href="https://www.google.com/" target="_blank">Enlace 1</a>
+    </div>
+
+    <hr>
+
+    <div class="warning">
+      <h4>IMPORTANTE</h4>
+      <p>
+        Es importante colocar estas pseudoclases de los enlaces en este orden para que los estils no se pisen entre si.
+      </p>
+    </div>
+  </body>
+
+</html>

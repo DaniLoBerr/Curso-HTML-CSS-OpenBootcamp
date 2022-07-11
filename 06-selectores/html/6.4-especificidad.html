@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Especificidad</title>
+    <link rel="stylesheet" href="../css/6.4-especificidad.css">
+  </head>
+
+  <body>
+    <h1>Especificidad</h1>
+    <p>
+      La especificidad en CSS se refiere al nivel de jerarquía que se le puede dar a los estilos de los elementos.
+    </p>
+    <p>
+      En CSS, cuando aplicamos dos estilos diferentes a un mismo elemento, el estilo que se finalmente se aplica es el segundo. Como CSS es un lenguaje en cascada, lo que apliquemos después sobreescribe lo anterior. Pero esto sucede cuando los estilos que aplicamos a dicho elemento tienen el mismo nivel de especificidad, es decir, el mismo nivel de jerarquía.
+    </p>
+    <p>
+      Existen 5 tipos de especificidad, 5 niveles de jerarquía.
+    </p>
+
+    <h2>Especificidad de etiqueta</h2>
+    <p>
+      Es el nivel más bajo, el quinto nivel en la jerarquía. Se refiere al estilo que se le aplicamos a una etiqueta, y tiene una especificidad de (0, 0, 1).
+    </p>
+
+    <h2>Especificidad de clase</h2>
+    <p class="especificidad-clase">
+      Es el cuarto nivel en la jerarquía. Se refiere al estilo que le aplicamos a una clase, y tiene una especificidad de (0, 1, 0).
+    </p>
+
+    <h2>Especificidad de id</h2>
+    <p id="especificidad-id">
+      Es el tercer nivel en la jerarquía. Se refiere al estilo que le aplicamos a un id, y tiene una especificidad de (1, 0, 0).
+    </p>
+
+    <h2>Especificidad en línea</h2>
+    <p style="background-color: rgb(250, 140, 140);">
+      Es el segundo nivel en la jerarquía. Se refiere al estilo que le aplicamos a un elemento en línea, es decir, dentro de la etiqueta del elemento con el atributo style en el documento HTML. No tiene una representación númerica como los anteriores. No se recomienda utilizar ya que es recomendable y buena práctica dar los estilos solo desde el documento CSS.
+    </p>
+
+    <h2>Especificidad important!</h2>
+    <p id="especificidad-important">
+      Es el primer nivel en la jerarquía, es decir, el nivel más importante. Se utiliza incluyendo la palabra "important!" dentro del selector del CSS que queremos que tenga más relevancia que los demás. No tiene una representación numérica como los demás. No se recomienda utilizar ya que es probable que se acabe según se vaya ampliando el documento haya que ir añadiendo más importants y no sería mantenible.
+    </p>
+
+    <h3>Más ejemplos sobre la especificidad</h3>
+    <div class="mas-ejemplos">
+      <p>
+        Esto que acabamos de ver son ejemplos específicos de cada supuesto, pero se pueden mezclar los diferentes niveles de especificidad, es decir:
+      </p>
+      <ul>
+        <li class="etiqueta-y-clase">
+          Si nosotros en el selector del CSS concretamos, por ejemplo, que queremos que se vean afectadas solo las clases que estén dentro de una etiqueta concreta, el nivel de especificidad sería (0, 1, 1), la cual sería mayor que (0, 0, 1) y (0, 1, 0).  
+        </li>
+
+        <li class="etiqueta-y-clase-2">
+          Si especificamos dos niveles de especificidad de etiqueta, quedaría (0, 1, 2), de clase quedaría (0, 2, 1), etc. Y tendría mayor jerarquía que las anteriores.
+        </li>
+
+        <li id="id-li" class="etiqueta-y-clase-y-id">
+          Siguiendo por esta línea, podemos especificar, por ejemplo, 2 etiquetas, 1 clase y un id, y quedaría un nivel de especificidad de (1, 1, 2), el cual sería mayor que, por ejemplo, un (0, 4, 0) o que un (1, 1, 1), para que veamos los niveles de importancia de la jerarquía de id, de class, etc.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

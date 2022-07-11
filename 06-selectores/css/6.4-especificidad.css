@@ -1,0 +1,45 @@
+p {
+  padding: 10px;
+  background-color: rgb(250, 230, 230);
+
+  /* Ejemplo nivel (0, 0, 1) de especificidad */
+}
+
+.especificidad-clase {
+  padding: 10px;
+  background-color: rgb(250, 200, 200);
+
+  /* Ejemplo nivel (0, 1, 0) de especificidad */
+}
+
+#especificidad-id {
+  padding: 10px;
+  background-color: rgb(250, 170, 170);
+
+  /* Ejemplo nivel (1, 0, 0) de especificidad */
+}
+
+#especificidad-important {
+  padding: 10px;
+  background-color: rgb(250, 110, 110) !important;
+
+  /* De esta manera, le decimos al nevagador que este color es el que se debe aplicar en estos elementos por encima del resto. */
+}
+
+.mas-ejemplos {
+  border: 1px solid;
+}
+
+li.etiqueta-y-clase {
+  padding: 10px;
+  background-color: rgb(200, 200, 250);
+}
+
+ul li.etiqueta-y-clase-2 {
+  padding: 10px;
+  background-color: rgb(170, 170, 250);
+}
+
+ul li#id-li.etiqueta-y-clase-y-id{
+  background-color: rgb(140, 140, 250);
+}

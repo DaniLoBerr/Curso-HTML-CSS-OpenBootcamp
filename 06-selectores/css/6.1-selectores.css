@@ -1,0 +1,29 @@
+.contenedor-1 {
+  background-color: black;
+}
+
+p {
+  color: green;
+}
+
+.contenedor-1 p {
+  color: blueviolet;
+
+  /* 
+  A esto se le llama anidar selectores. Quiere decir que para no tener que poner una clase en todos los elementos p de un mismo contenedor, se le da una clase al contenedor y se anida el selector p en el selector del contenedor para que este código solo afecte a los p incluidos dentro del contenedor.
+
+  Sirve para ganar precisión.
+  */
+}
+
+/* Se pueden hacer anidaciones a todos los niveles, vemos un ejemplo aunque pueda ser redundante tanta anidación: */
+
+body main section div.contenedor-2 p {
+  color: red;
+  background-color: yellow;
+}
+
+.contenedor-2 #boton {
+  color: cyan;
+  background-color: black;
+}
