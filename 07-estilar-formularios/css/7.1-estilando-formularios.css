@@ -1,0 +1,69 @@
+.input {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+.input[type="password"] {
+  color: red;
+
+  /* Una manera de seleccionar el tipo de inputs */
+}
+
+#input-texto-moderno {
+  border: none;
+  border-bottom: 2px solid lightgray;
+  border-radius: 0;
+  outline: none; /* Para quitarle el borde que aparece cuando seleccionas el input */
+  color: grey;
+  font-weight:500;
+  width: fit-content;
+  box-shadow: 0px 0px 5px 2px grey;
+  /*
+    Valores box-shadow: 
+      1- palabra clave
+      2- desplazamiento eje x
+      3- desplazamiento eje y
+      4- difuminación
+      5- tamaño sombra
+      6- color
+  */
+}
+
+#input-texto-moderno:focus {
+  border-bottom: 2px solid grey;
+}
+
+#input-texto-moderno::placeholder {
+  font-style: italic;
+}
+
+#input-icono {
+  padding: 10px;
+  padding-left: 45px;
+  border: none;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 10px;
+  background-image: url(../img/lupa-icono.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+#input-icono::placeholder {
+  font-style: italic;
+  color: rgb(6, 6, 6, 0.5)
+}
+
+#input-text-area {
+  resize: none; /* Para permitir redimensionar el lado izquierdo, derecho o ninguno */
+}
+
+#input-lista-seleccionable {
+  width: 300px;
+  padding: 10px;
+  background-color: pink;
+}
