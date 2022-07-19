@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+  background-color: #262729;
+  color: white;
+}
+
+main {
+  margin: 5vw;
+}
+
+main.container {
+  margin: auto;
+  width: 700px;
+  padding: 20px;
+  display: flex;
+}
+
+main .welcome {
+  padding: 50px;
+}
+
+main .form-inputs {
+  padding: 50px;
+  width: 350px;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-inputs input {
+  color: white;
+  height: 50px;
+  background-color: #36373B;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #C2C2C3;
+}
+
+.form-inputs input:hover {
+  box-shadow: 0 0 5px whitesmoke;
+}
+
+.form-inputs input:focus {
+  outline: none;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.checkbox-label, .submit-area {
+  color: #a4a4ab;
+}
+
+.checkbox-label input#checkbox-label {
+  margin-left: 0;
+  margin-right: 15px;
+  width: 20px;
+}
+
+
+a:link, a:visited {
+  color: #edc472;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5d497;
+}
+
+.submit-area {
+  display: flex;
+  gap: 50px
+}
+
+.submit-area #submit-button {
+  width: 300px;
+  background-color: #edc472;
+  font-weight: 700;
+  font-size: medium;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.submit-area #submit-button:hover {
+  background-color: #f5d497;
+}
+
+.log-forgot-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social
